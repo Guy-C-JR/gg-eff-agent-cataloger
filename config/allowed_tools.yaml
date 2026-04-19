@@ -1,0 +1,110 @@
+tools:
+  - tool_id: fetch_fhir_patient
+    tool_name: FetchFHIRPatient
+    expected_data_sources:
+      - FHIR API
+  - tool_id: query_ehr_db
+    tool_name: QueryEHRDatabase
+    expected_data_sources:
+      - EHR Database
+      - PostgreSQL
+  - tool_id: get_pgx_report
+    tool_name: GetPGXReport
+    expected_data_sources:
+      - PGX Service API
+  - tool_id: read_s3_artifact
+    tool_name: ReadS3Artifact
+    expected_data_sources:
+      - Amazon S3
+  - tool_id: build_icd10_cache
+    tool_name: build_icd10_cache
+    expected_data_sources:
+      - FHIR API
+  - tool_id: get_orchestrator_package
+    tool_name: get_orchestrator_package
+    expected_data_sources:
+      - FHIR API
+  - tool_id: get_patient_allergies
+    tool_name: get_patient_allergies
+    expected_data_sources:
+      - FHIR API
+  - tool_id: get_patient_conditions
+    tool_name: get_patient_conditions
+    expected_data_sources:
+      - FHIR API
+  - tool_id: get_patient_details
+    tool_name: get_patient_details
+    expected_data_sources:
+      - FHIR API
+  - tool_id: get_patient_encounters
+    tool_name: get_patient_encounters
+    expected_data_sources:
+      - FHIR API
+  - tool_id: get_patient_immunizations
+    tool_name: get_patient_immunizations
+    expected_data_sources:
+      - FHIR API
+  - tool_id: get_patient_medications
+    tool_name: get_patient_medications
+    expected_data_sources:
+      - FHIR API
+  - tool_id: get_patient_observations
+    tool_name: get_patient_observations
+    expected_data_sources:
+      - FHIR API
+  - tool_id: get_patient_procedures
+    tool_name: get_patient_procedures
+    expected_data_sources:
+      - FHIR API
+  - tool_id: get_prescribed_medications
+    tool_name: get_prescribed_medications
+    expected_data_sources:
+      - FHIR API
+  - tool_id: get_reported_medications
+    tool_name: get_reported_medications
+    expected_data_sources:
+      - FHIR API
+  - tool_id: search_all_resources
+    tool_name: search_all_resources
+    expected_data_sources:
+      - FHIR API
+  - tool_id: search_patients
+    tool_name: search_patients
+    expected_data_sources:
+      - FHIR API
+  - tool_id: process
+    tool_name: process
+    expected_data_sources:
+      - Internal REST API
+  - tool_id: convert_csv
+    tool_name: convert_csv
+    expected_data_sources:
+      - Internal REST API
+  - tool_id: ask_question
+    tool_name: ask_question
+    expected_data_sources:
+      - Internal REST API
+  - tool_id: search_genes
+    tool_name: search_genes
+    expected_data_sources:
+      - Internal REST API
+  - tool_id: get_variants_by_gene
+    tool_name: get_variants_by_gene
+    expected_data_sources:
+      - Internal REST API
+  - tool_id: get_snp_info
+    tool_name: get_snp_info
+    expected_data_sources:
+      - Internal REST API
+  - tool_id: get_associations_by_gene
+    tool_name: get_associations_by_gene
+    expected_data_sources:
+      - Internal REST API
+  - tool_id: search_studies_by_trait
+    tool_name: search_studies_by_trait
+    expected_data_sources:
+      - Internal REST API
+  - tool_id: openfda_drug_search
+    tool_name: openfda_drug_search
+    expected_data_sources:
+      - Internal REST API

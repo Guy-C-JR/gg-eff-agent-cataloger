@@ -1,0 +1,32 @@
+org: example-health-org
+repos:
+  - ehr-ai-agent
+  - phenotype-ai-agent
+  - pgx-ai-agent
+  - pmx-ai-agent
+  - gwas-ai-agent
+  - rx-ai-agent
+
+# Optional manual agent mapping
+agents:
+  EHR: ehr-ai-agent
+  Phenotype: phenotype-ai-agent
+  PGX: pgx-ai-agent
+  PMX: pmx-ai-agent
+  GWAS: gwas-ai-agent
+  Rx: rx-ai-agent
+
+discover: false
+keywords: [ehr, phenotype, pgx, pmx, gwas, rx, agent]
+out: catalog
+clone_dir: catalog/_clones
+
+# Optional local-only mode root folder with repo directories.
+# If set, GitHub auth is not required and repos are scanned from disk.
+# local_repos_dir: ./sample-agent-repos
+
+allowed_tools_file: config/allowed_tools.yaml
+privacy_safe_logging: true
+apply: false
+pr: false
+token_env: GITHUB_TOKEN

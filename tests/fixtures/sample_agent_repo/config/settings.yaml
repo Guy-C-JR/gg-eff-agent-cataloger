@@ -1,0 +1,3 @@
+fhir_base_url: https://ehr.internal/api/fhir
+snowflake_account: acme-prod
+artifacts_bucket: s3://example-agent-data

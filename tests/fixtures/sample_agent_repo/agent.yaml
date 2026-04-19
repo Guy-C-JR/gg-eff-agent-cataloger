@@ -1,0 +1,19 @@
+agent_id: agent-ehr
+agent_name: EHR
+entrypoint: python -m app.main
+tools:
+  - tool_id: fetch_fhir_patient
+    tool_name: FetchFHIRPatient
+    purpose: Get patient records from FHIR
+    data_sources:
+      - name: FHIR API
+        type: api
+        environment: prod
+    permissions: [read]
+
+data_sources:
+  - name: FHIR API
+    type: api
+    environment: prod
+    owner: informatics
+    notes: read only
